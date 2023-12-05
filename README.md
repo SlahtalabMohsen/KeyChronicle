@@ -1,1 +1,3 @@
 # KeyChronicle
+
+This python script record everything you type in your pc inside a text file...
